@@ -23,5 +23,13 @@
     <string name="button_float">.</string>
 
     <string name="mplayer">Music player</string>
+    <string name="album_cover">Обложка альбома</string>
+    <string name="prev_button">prev</string>
+    <string name="play_button">play</string>
+    <string name="pause_button">pause</string>
+    <string name="next_button">next</string>
+    <string name="name">Name</string>
+    <string name="volume_button">Volume</string>
+    <string name="song_progress_format">%1$s - %2$s/%3$s</string>
 
 </resources>
