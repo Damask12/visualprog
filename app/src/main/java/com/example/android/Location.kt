@@ -51,7 +51,7 @@ class Location : AppCompatActivity(), LocationListener {
         val timeUpdateRunnable = object : Runnable {
             override fun run() {
                 updateTime()
-                handler.postDelayed(this, TimeUnit.SECONDS.toMillis(10000))
+                handler.postDelayed(this, TimeUnit.SECONDS.toMillis(1))
             }
         }
         handler.post(timeUpdateRunnable)
