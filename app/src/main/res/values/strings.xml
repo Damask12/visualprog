@@ -23,7 +23,6 @@
     <string name="button_float">.</string>
 
     <string name="mplayer">Music player</string>
-    <string name="album_cover">Обложка альбома</string>
     <string name="prev_button">prev</string>
     <string name="play_button">play</string>
     <string name="pause_button">pause</string>
@@ -31,5 +30,16 @@
     <string name="name">Name</string>
     <string name="volume_button">Volume</string>
     <string name="song_progress_format">%1$s - %2$s/%3$s</string>
+
+    <string name="location">Location</string>
+    <string name="save_location">Save Location</string>
+    <string name="waiting">Waiting for location data...</string>
+
+    <string name="current_time">Current time: %s</string>
+    <string name="location_template">Latitude: %s\nLongitude: %s\nAltitude: %s м</string>
+    <string name="access_error">Access error</string>
+    <string name="save_success">Location saved</string>
+    <string name="location_unavailable">Location unavailable</string>
+    <string name="save_error">Save error</string>
 
 </resources>

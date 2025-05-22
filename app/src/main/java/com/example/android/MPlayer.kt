@@ -9,7 +9,6 @@ import android.os.Looper
 import android.widget.Button
 import android.widget.SeekBar
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -17,7 +16,6 @@ import java.io.File
 import java.util.Locale
 import java.util.concurrent.TimeUnit
 import android.provider.MediaStore
-import android.util.Log
 
 class MPlayer : AppCompatActivity() {
     private lateinit var mediaPlayer: MediaPlayer
@@ -165,7 +163,6 @@ class MPlayer : AppCompatActivity() {
     }
 
     private fun playSong(index: Int) {
-        try {
             mediaPlayer.reset()
             mediaPlayer.setDataSource(songsList[index].absolutePath)
             mediaPlayer.prepare()
@@ -178,10 +175,6 @@ class MPlayer : AppCompatActivity() {
             mediaPlayer.setOnCompletionListener {
                 playNextSong()
             }
-        } catch (e: Exception) {
-            Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
-            Log.e("Player", "Playback error", e)
-        }
     }
 
     private fun updateProgress() {

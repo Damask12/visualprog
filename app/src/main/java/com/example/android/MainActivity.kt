@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.android.Calculator
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +18,10 @@ class MainActivity : AppCompatActivity() {
         }
         findViewById<Button>(R.id.mplayer_button).setOnClickListener {
             val intent = Intent(this, MPlayer::class.java)
+            startActivity(intent)
+        }
+        findViewById<Button>(R.id.location_button).setOnClickListener {
+            val intent = Intent(this, Location::class.java)
             startActivity(intent)
         }
 
